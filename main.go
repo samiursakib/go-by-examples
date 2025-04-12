@@ -1,6 +1,22 @@
 package main
 
 func main() {
-	// fmt.Println("This is a main function")
-	helloWorld()
+	// helloWorld()
+	// values()
+	// constants()
+	// for_()
+	// ifElse()
+	// switch_()
+	// arrays()
+	// slices()
+	// maps_()
+	// functions()
+	// multipleReturnValues()
+	// variadicFunctions()
+	// closures()
+	// recursion()
+	// rangeOverBuiltinTypes()
+	// points()
+	// stringsAndRunes()
+	structs()
 }
