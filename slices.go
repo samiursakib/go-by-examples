@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func slices() {
+func slices_() {
 	var s []string
 	fmt.Println(s, "length:", len(s), "capacity:", cap(s))
 
