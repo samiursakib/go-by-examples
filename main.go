@@ -34,4 +34,9 @@ func main() {
 	// channelDirection()
 	// select_()
 	// timeouts()
+	// nonBlockingChannelOperations()
+	// closingChannels()
+	// rangeOverChannels()
+	// timers()
+	// tickers()
 }
