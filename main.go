@@ -39,4 +39,8 @@ func main() {
 	// rangeOverChannels()
 	// timers()
 	// tickers()
+	// workerPools()
+	// waitGroups()
+	// rateLimiting()
+	atomicCounters()
 }
