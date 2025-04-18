@@ -12,9 +12,9 @@ func tickers() {
 	go func() {
 		for {
 			select {
-			case <- done:
+			case <-done:
 				return
-			case t := <- ticker.C:
+			case t := <-ticker.C:
 				fmt.Println("tick at", t)
 			}
 		}

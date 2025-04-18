@@ -8,12 +8,12 @@ import (
 func timers() {
 	time1 := time.NewTimer(2 * time.Second)
 
-	<- time1.C
+	<-time1.C
 	fmt.Println("timer 1 fired")
 
 	time2 := time.NewTimer(time.Second)
 	go func() {
-		<- time2.C
+		<-time2.C
 		fmt.Println("timer 2 fired")
 	}()
 	stop2 := time2.Stop()

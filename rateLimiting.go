@@ -15,7 +15,7 @@ func rateLimiting() {
 	limiter := time.Tick(1000 * time.Millisecond)
 
 	for req := range requests {
-		<- limiter
+		<-limiter
 		fmt.Println("request", req, time.Now())
 	}
 

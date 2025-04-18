@@ -8,9 +8,9 @@ func closingChannels() {
 
 	go func() {
 		for {
-			j, more := <- jobs
+			j, more := <-jobs
 			if more {
-				fmt.Println("received job" ,j)
+				fmt.Println("received job", j)
 			} else {
 				fmt.Println("received all jobs")
 				done <- true
@@ -25,8 +25,8 @@ func closingChannels() {
 	}
 	close(jobs)
 	fmt.Println("sent all jobs")
-	<- done
+	<-done
 
-	_, more := <- jobs
+	_, more := <-jobs
 	fmt.Println("received more jobs", more)
 }

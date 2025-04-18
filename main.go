@@ -42,5 +42,9 @@ func main() {
 	// workerPools()
 	// waitGroups()
 	// rateLimiting()
-	atomicCounters()
+	// atomicCounters()
+	// mutexes()
+	// statefulGoroutines()
+	// sorting()
+	sortingByFunctions()
 }

@@ -7,7 +7,7 @@ func nonBlockingChannelOperations() {
 	signals := make(chan bool)
 
 	select {
-	case msg := <- messages:
+	case msg := <-messages:
 		fmt.Println("received message", msg)
 	default:
 		fmt.Println("no message received")
@@ -22,9 +22,9 @@ func nonBlockingChannelOperations() {
 	}
 
 	select {
-	case msg := <- messages:
+	case msg := <-messages:
 		fmt.Println("received message", msg)
-	case sig := <- signals:
+	case sig := <-signals:
 		fmt.Println("received signal", sig)
 	default:
 		fmt.Println("no activity")
